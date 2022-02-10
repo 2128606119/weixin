@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Test2016@
+    url: jdbc:mysql://localhost:3306/weixin?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true&autoReconnect=true
+mybatis-plus:
+  type-aliases-package: com.cn.enttry
+
+

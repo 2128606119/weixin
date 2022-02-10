@@ -1,0 +1,13 @@
+server:
+  port: 80
+spring:
+  application:
+    name: weixin-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: payment_routh
+          uri: lb://WEIXIN-OPENFEIGN
+          predicates:
+            - Path=/**
+

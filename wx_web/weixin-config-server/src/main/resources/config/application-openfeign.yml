@@ -1,0 +1,20 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: weixin-openfeign
+ribbon:
+#  建立连接超时时间
+  ReadTimeout: 5000
+#  建立连接后从服务器读取到可用资源所用时间
+  ConnectTimeout: 5000
+logging:
+  level:
+    com.atguigu.springcloud.service.PaymentFeginService: debug
+feign:
+  hystrix:
+    enabled: true
+
+
+

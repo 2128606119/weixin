@@ -1,0 +1,19 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: user-web
+
+# fdfs文件服务器整合
+ip: 154.22.114.32
+
+fdfs:
+  so-timeout: 2000
+  connect-timeout: 2000
+  thumb-image:             #缩略图生成参数
+    width: 100
+    height: 100
+  tracker-list:            #TrackerList参数,支持多个
+    - 154.22.114.32:22122
+  web-server-url: http://${ip}:8888/
+  
